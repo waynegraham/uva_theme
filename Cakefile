@@ -8,7 +8,7 @@ files = [
 application_name = 'uva-theme'
 version = '1.0'
 
-builddir = './javascripts/'
+builddir = './javascripts'
 targetfile = "#{application_name}-#{version}"
 
 task 'build:browser', 'Compile and minify for use in browser', ->

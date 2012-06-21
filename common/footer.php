@@ -1,12 +1,16 @@
 
 
+
+
+<?php plugin_footer(); ?>
+
 </div> <!-- #container -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
 <?php
-    queue_js('uva-theme-1.0-min', 'javascripts');
+    queue_js('uva-theme-1.0', 'javascripts');
     echo display_js(false);
 ?>
 <!--[if lt IE 7 ]>

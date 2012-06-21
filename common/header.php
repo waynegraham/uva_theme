@@ -14,7 +14,7 @@
   <meta name="description" content="<?php echo $description; ?>">
   <?php endif; ?>
   <meta name="author" content="<?php echo settings('author'); ?>">
-  <link rel="shortcut icon" href="<?php echo src('favicon.png', 'images'); ?>">
+  <link rel="shortcut icon" href="<?php echo src('favicon.ico', 'images'); ?>">
   <link rel="apple-touch-icon" href="<?php echo src('apple-touch-icon.png', 'images'); ?>">
 
   <?php echo js('libs/modernizr-2.5.3.min', 'javascripts/'); ?>
@@ -30,6 +30,18 @@
 <?php plugin_body(); ?>
 
 <div id="container">
+
+<header role="banner" class="header">
+<?php plugin_page_header(); ?>
+</header>
+
+<nav role="navigation">
+  <?php echo custom_public_nav_header(); ?>
+</nav>
+
+<div id="content" class="content">
+<?php plugin_page_content(); ?>
+
 
 
 
