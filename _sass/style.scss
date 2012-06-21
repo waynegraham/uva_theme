@@ -1,2 +1,6 @@
 @import 'base';
 
+#container {
+  @include container;
+  @include susy-grid-background;
+}
