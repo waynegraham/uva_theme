@@ -45,7 +45,7 @@
         <nav class="sixcol" id="top-nav">
           <h3 class="visuallyhidden">U.Va. Links</h3>
           <ul>
-            <li><a class="return-home" href="http://localhost:8888/wordpress/">Test Home</a></li>
+            <li><?php echo link_to_home_page(settings('site_title')); ?></li>
             <li><a href="http://www.virginia.edu">U.Va. Home</a></li>
             <li><a href="http://lib.virginia.edu">U.Va. Library</a></li>
           </ul>
@@ -59,21 +59,19 @@
             <div class="container">
         <h1 class="ninecol" id="main-title">
           <a href="http://localhost:8888/wordpress/">
-            <span class="donor-title">Just another WordPress site</span>
-            <span class="library-title">Test</span>        
+            TODO: FIX THIS LINK
+            <span class="donor-title"><?php echo settings('site_title'); ?></span>
+            <span class="library-title">Test</span>
         </a></h1>
         <a class="threecol last" id="logo" href="http://lib.virginia.edu">
-          <?php echo img('liblogo.pn'); ?>
-          <img src="/wordpress/wp-content/themes/libweb-base/img/liblogo.png" width="198" height="90" alt="Test">
+            <img src="<?php echo img('liblogo.png'); ?>" width="198" height="90" alt="Test">
         </a>
       </div>
     </header>
   </div></div><!-- /.row /.container -->
 
-<div id="content">
-  <div class="docWrap">
-    <div id="mainContent">
-
-    <div class="hd"><h1><?php echo settings('site_title'); ?></h1></div>
-      <div class="bd">
-
+<div class="container content-container">
+  <div class="row content-row clearfix">
+      <div id="content" class="row">
+          <div id="main" class="ninecol" role="main">
+            <div class="container">

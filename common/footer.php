@@ -1,29 +1,39 @@
-
 </div>
-	</div><!-- end primary-wrap -->
-</div><!-- end content -->
+</div><!-- /#main -->
+<aside id="sidebar" class="threecol last" role="complementary">
+  <div class="container">
+    <div id="sidebar-area-top">
+      <article id="search-2" class="widget-1 widget-first widget widget_search">
+        <div class="widget-1 widget-first container">
+           <form role="search" method="get" id="searchform" action="http://localhost:8888/wordpress/">
+              <label class="visuallyhidden" for="s">Search for:</label>
+              <input type="text" value="" name="s" id="s" placeholder="Search">
+              <input type="submit" id="searchsubmit" value="Search" class="button">
+            </form>
+        </div>
+      </article>
 
-</div><!--end wrap-->
-
-<hr />
-<div id="globalFt">
-  <div class="docWrap">
-    <div class="col first">
-
-      <p><strong><a href="http://lib.virginia.edu">University&nbsp;of&nbsp;Virginia&nbsp;Library</a></strong><br />
-        PO Box 400113, Charlottesville, VA 22904-4113<br />
-        ph: (434) 924-3021, fax: (434) 924-1431, <a href="mailto:library@virginia.edu">library@virginia.edu</a></p>
+      <article id="recent-posts-2" class="widget-2 widget widget_recent_entries">
+      <div class="widget-2 container">
+        <h3>Recently Contributed</h3>		
+        <ul>
+				  <li><a href="/wordpress/?p=1" title="Hello world!">Hello world!</a></li>
+				</ul>
+        </div>
+    </article>
+        </div>
+            </aside><!-- /#sidebar -->
+        </div><!-- /#content -->
     </div>
-    <div class="col">
-
-      <p><a href="http://www.lib.virginia.edu/libraries/">Libraries</a>&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;<a href="http://www.lib.virginia.edu/dir/libdept.html">Depts./Contacts</a>&nbsp;&nbsp; |&nbsp;&nbsp;<a href="http://www.virginia.edu">U.Va. Home</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="http://www.itc.virginia.edu">ITC</a></p>
-      <p><a href="mailto:webmanager_library@virginia.edu">Website Feedback</a>&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;<a href="http://www.lib.virginia.edu/sitesearch.html">Search</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="http://www.lib.virginia.edu/questions.html">Questions? Ask a Librarian</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="http://www.lib.virginia.edu/hours/summer_session_2007.html">Hours</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="http://www.lib.virginia.edu/map.html">Map</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="http://www.lib.virginia.edu/policies/">Policies</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="http://www.lib.virginia.edu/press/">Press</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="http://www.lib.virginia.edu/HR/">Jobs</a></p>
-
-      <p><a href="http://www.virginia.edu/copyright.html" id="copyrightLink">&copy;</a> 2007 by the Rector and Visitors of the <a href="http://www.virginia.edu">University&nbsp;of&nbsp;Virginia</a></p>
-    </div>
-  </div>
-  <!-- End .docWrap -->
-</div>
+</div><!-- /.row /.container -->
+<div class="container footer-container"><div class="row row-container clearfix">
+    <footer id="content-info" class="row" role="contentinfo">
+            <div class="container">
+            <p id="copyright">&copy; <?php echo date("Y");?> by the Rector and Visitors of the <a href="http://www.virginia.edu">University of Virginia</a></p>
+      </div>
+    </footer>
+    </div></div><!-- /.row /.container -->
+  </div><!-- /#wrap -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
