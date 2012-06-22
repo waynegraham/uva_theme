@@ -1,47 +1,6 @@
-@import 'base';
-@import 'bootstrap/mixins';
+/*@import 'base';*/
+/*@import 'bootstrap/mixins';*/
 @import '1140';
 @import 'uva';
 
-@charset "UTF-8";
-/* CSS Document */
-
-/* Customize the section heading */
-#sectName { 
-	/* Set the image used for the section heading text. */
-	background: url('images/slabname.png') no-repeat; 
-	/* background: url(../images/components/header/sect_hd.png) no-repeat; */
-	/* The next four rules are for size and placement. Position is absolute, relative to the #sectHd div. */
-	/*bottom: 0;*/ /* Default, okay for most cases, is set to 0px in top-level layout.css */
-	/*right: 362px;*/ /* Default, okay for most cases, is set to 362px in top-level layout.css */
-	width: 360px; 
-	height: 55px;
-}
-#sectHd {
-	/* You can optionally customize the minimum height of the section heading. This is to prevent the #sectHd div
-	   from collapsing if there is no #sectVitals div to prop it up and give it height. */
-	/* background: #DDD url('/scholarslab/images/components/sectHd/sect_vitals_box_top.png') repeat/repeat-x/repeat-y/no-repeat scroll/fixed top/center/bottom/x-%/x-pos left/center/right/y-%/y-pos; */
-	/*min-height: 55px;*/ /* Default is set to 55px in top-level layout.css file */
-}
-
-.slabframe {
-	width: 700px;
-	height: 200px;
-	border: 6px solid #990000;
-	overflow: hidden;
-}
-
-.slabpic {
-	position: relative;
-	width: 700px;
-	height: 200px;
-}
-
-#subContent1 .box .hd,
-  #subContent2 .box .hd {
-	border-bottom: 3px solid #990000;
-}
-
-.eventsListing dd.eventName {
-	font-weight: normal;
-}
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
