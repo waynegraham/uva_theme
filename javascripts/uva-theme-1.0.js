@@ -203,12 +203,10 @@ uvalib.setupSearchBtns = function() {
 
 }
 
-<!--hide me from old browsers
-  function encodemailto(id) {
-    var domain="virginia.edu";
-	document.write("<a href='mailto:"+id+"@"+domain+"'>"+id+"@"+domain+"</a>");
-  }
-  //--> unhide me from old browsers
+function encodemailto(id) {
+  var domain="virginia.edu";
+  document.write("<a href='mailto:"+id+"@"+domain+"'>"+id+"@"+domain+"</a>");
+}
 
 
 'use strict';
