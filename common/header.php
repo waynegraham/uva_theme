@@ -15,39 +15,63 @@
   <meta name="author" content="<?php echo settings('author'); ?>">
   <link rel="shortcut icon" href="<?php echo src('favicon.ico', 'images'); ?>">
   <link rel="apple-touch-icon" href="<?php echo src('apple-touch-icon.png', 'images'); ?>">
-  <link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/2.5.1/build/datatable/assets/skins/sam/datatable.css">
   <?php echo js('libs/modernizr-2.5.3.min', 'javascripts'); ?>
-
   <?php echo auto_discovery_link_tags(); ?>
   <?php echo plugin_header(); ?>
   <?php
     queue_css('style');
     display_css();
 ?>
-
+  <!--[if lt IE 8]><?php echo css('ie'); ?><![endif]-->
 </head>
-<?php echo body_tag(array('id' => @$bodyid, 'class' => 'uvalib-t1 uvalib-hd1 yui-skin-sam ' . @$bodyclass)); ?>
+<?php echo body_tag(array('id' => @$bodyid, 'class' => 'home blog logged-in admin-bar no-bg ' . @$bodyclass)); ?>
 
-<div id="globalHd">
-  <div class="docWrap">
-    <div id="skipToNav" class="imgReplace"><strong>Skip directly to:</strong> <a href="#content">Main content</a> &nbsp;|&nbsp; <a href="#globalNav">Main navigation</a> &nbsp;|&nbsp; <a href="#sectNav">Navigation for this section of the website</a></div>
+<div id="wrap" role="document">
+    <div id="jump-menu" class="visuallyhidden">
+      Jump to: 
+      <ul>
+        <li><a href="#content">Main content</a></li>
+        <li><a href="#main-nav">Main navigation</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="http://lib.virginia.edu/services/accessibility/">Accessibility Services</a></li>
+      </ul>
+    </div>
 
-    <hr />
-    <div id="bookmarkMotif"> </div>
-    <div id="branding">
-      <span class="displayForNoCSS">Go to</span> <a id="logo" class="imgReplace" href="http://lib.virginia.edu" title="Go to U.Va. Library Home">University of Virginia Library</a> <span class="displayForNoCSS">home</span>    </div>
-    <hr />
-    <hr />
-  </div>
-  <!-- End .docWrap -->
-</div>
+     <div class="container top-container">
+      <div class="row top-row">
+        <nav class="sixcol" id="top-nav">
+          <h3 class="visuallyhidden">U.Va. Links</h3>
+          <ul>
+            <li><?php echo link_to_home_page(settings('site_title')); ?></li>
+            <li><a href="http://www.virginia.edu">U.Va. Home</a></li>
+            <li><a href="http://lib.virginia.edu">U.Va. Library</a></li>
+          </ul>
+        </nav>
+        <div class="sixcol last"></div>
+      </div>
+    </div>
 
-<hr />
+    <div class="container header-container"><div class="row header-row clearfix">
+      <header id="top-banner" class="twelvecol" role="banner">
+        <div class="container">
+          <h1 class="ninecol" id="main-title">
+          <a href="<?php echo uri('/'); ?>">
+            <span class="donor-title"><?php echo settings('site_title'); ?></span>
+            <span class="library-title">
+              <?php if($tagline = get_theme_option('Tagline Text')): ?>
+                <?php echo $tagline; ?>
+              <?php endif;?>
+            </span>
+        </a></h1>
+        <a class="threecol last" id="logo" href="http://lib.virginia.edu">
+            <img src="<?php echo img('liblogo.png'); ?>" width="198" height="90" alt="Test">
+        </a>
+      </div>
+    </header>
+  </div></div><!-- /.row /.container -->
 
-<div id="content">
-  <div class="docWrap">
-    <div id="mainContent">
-
-    <div class="hd"><h1><?php echo settings('site_title'); ?></h1></div>
-      <div class="bd">
-
+<div class="container content-container">
+  <div class="row content-row clearfix">
+      <div id="content" class="row">
+          <div id="main" class="ninecol" role="main">
+            <div class="container">
