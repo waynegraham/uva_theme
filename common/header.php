@@ -57,7 +57,11 @@
           <h1 class="ninecol" id="main-title">
           <a href="<?php echo uri('/'); ?>">
             <span class="donor-title"><?php echo settings('site_title'); ?></span>
-            <span class="library-title">Needs a Tagline</span>
+            <span class="library-title">
+              <?php if($tagline = get_theme_option('Tagline Text')): ?>
+                <?php echo $tagline; ?>
+              <?php endif;?>
+            </span>
         </a></h1>
         <a class="threecol last" id="logo" href="http://lib.virginia.edu">
             <img src="<?php echo img('liblogo.png'); ?>" width="198" height="90" alt="Test">
