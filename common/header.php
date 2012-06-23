@@ -16,18 +16,15 @@
   <link rel="shortcut icon" href="<?php echo src('favicon.ico', 'images'); ?>">
   <link rel="apple-touch-icon" href="<?php echo src('apple-touch-icon.png', 'images'); ?>">
   <?php echo js('libs/modernizr-2.5.3.min', 'javascripts'); ?>
-
   <?php echo auto_discovery_link_tags(); ?>
   <?php echo plugin_header(); ?>
   <?php
     queue_css('style');
     display_css();
 ?>
-
   <!--[if lt IE 8]><?php echo css('ie'); ?><![endif]-->
-
 </head>
-<?php echo body_tag(array('id' => @$bodyid, 'class' => 'home blog logged-in admin-bar  no-bg ' . @$bodyclass)); ?>
+<?php echo body_tag(array('id' => @$bodyid, 'class' => 'home blog logged-in admin-bar no-bg ' . @$bodyclass)); ?>
 
 <div id="wrap" role="document">
     <div id="jump-menu" class="visuallyhidden">
@@ -50,16 +47,15 @@
             <li><a href="http://lib.virginia.edu">U.Va. Library</a></li>
           </ul>
         </nav>
-        <div class="sixcol last">
-                  </div>
+        <div class="sixcol last"></div>
       </div>
     </div>
-<div class="container header-container"><div class="row header-row clearfix">
-    <header id="top-banner" class="twelvecol" role="banner">
-            <div class="container">
-        <h1 class="ninecol" id="main-title">
-          <a href="http://localhost:8888/wordpress/">
-            TODO: FIX THIS LINK
+
+    <div class="container header-container"><div class="row header-row clearfix">
+      <header id="top-banner" class="twelvecol" role="banner">
+        <div class="container">
+          <h1 class="ninecol" id="main-title">
+          <a href="<?php echo uri('/'); ?>">
             <span class="donor-title"><?php echo settings('site_title'); ?></span>
             <span class="library-title">Test</span>
         </a></h1>
