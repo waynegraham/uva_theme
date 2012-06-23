@@ -4,3 +4,22 @@
 @import 'uva';
 
 @import url(http://fonts.googleapis.com/css?family=PT+Mono);
+
+// contribution form additions
+legend {
+  padding: 0.9em 0 1.0em;
+  font-size: 1.333em;
+  font-family: "prenton", "Helvetica Neue", Arial, sans-serif;
+  color: #4B676E;
+}
+
+.field {
+  margin: 1.4em;
+  font-weight: bold;
+
+  .normal {
+    font-weight: normal;
+  }
+}
+
+

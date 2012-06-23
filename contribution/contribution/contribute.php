@@ -16,21 +16,6 @@ enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); 
 // ]]>
 </script>
 
-<style>
-legend {
-  padding: 1.866em 0 1.0em;
-  font-size: 1.333em;
-  font-family: "prenton", "Helvetica Neue", Arial, sans-serif;
-  color: #4B676E;
-}
-
-input {
-  line-height: 1.4em;
-}
-
-
-</style>
-
 <div id="primary">
 <?php echo flash(); ?>
     
@@ -49,7 +34,7 @@ input {
         <fieldset id="contribution-contributor-metadata" <?php if (!isset($typeForm)) { echo 'style="display: none;"'; }?>>
             <legend>Contributor Information</legend>
             <div class="field">
-                <label for="contributor-name">Name</label>
+                <label for="contributor-name">Name <span class="normal">(not required to be your real name)</span></label>
                 <div class="inputs">
                     <div class="input">
                         <?php echo $this->formText('contributor-name', @$_POST['contributor-name'], array('class' => 'textinput')); ?>
@@ -57,7 +42,7 @@ input {
                 </div>
             </div>
             <div class="field">
-                <label for="contributor-email">Email Address</label>
+                <label for="contributor-email">Email Address <span class="normal">(will not be shared)</span></label>
                 <div class="inputs">
                     <div class="input">
                         <?php echo $this->formText('contributor-email', @$_POST['contributor-email'], array('class' => 'textinput')); ?>
