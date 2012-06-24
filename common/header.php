@@ -13,6 +13,7 @@
   <meta name="description" content="<?php echo $description; ?>">
   <?php endif; ?>
   <meta name="author" content="<?php echo settings('author'); ?>">
+  <link rel="author" content="<?php echo src('humans.txt'); ?>">
   <link rel="shortcut icon" href="<?php echo src('favicon.ico', 'images'); ?>">
   <link rel="apple-touch-icon" href="<?php echo src('apple-touch-icon.png', 'images'); ?>">
   <?php echo js('libs/modernizr-2.5.3.min', 'javascripts'); ?>
