@@ -2,12 +2,6 @@ fs = require 'fs'
 util = require 'util'
 
 files = [
-  './javascripts/libs/yui/yahoo-dom-event.js',
-  './javascripts/libs/yui/element-beta-min.js',
-  './javascripts/libs/yui/datasource-beta-min.js',
-  './javascripts/libs/yui/datatable-beta-min.js',
-  './javascripts/libs/uva_main.js',
-  './javascripts/libs/encodemailto.js',
   './javascripts/plugins.js' # this needs to be last
 ]
 
