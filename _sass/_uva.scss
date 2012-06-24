@@ -389,7 +389,7 @@ body {
 }
 
 .top-container .last { text-align: right; }
-.site-search-link { background: url('../img/search-icon.png') no-repeat scroll 0 2px transparent; display: inline-block; height: 20px; line-height: 18px; margin-right: 6%; padding-left: 24px; }
+.site-search-link { background: url('images/search-icon.png') no-repeat scroll 0 2px transparent; display: inline-block; height: 20px; line-height: 18px; margin-right: 6%; padding-left: 24px; }
 
 #search { text-align: right; }
 #SI, #s {
@@ -433,16 +433,16 @@ background-clip: padding-box; }
 #account-links li, #top-nav li { display: inline; margin-right: 1.5em; }
 
 .header-container {
-  background: url('../img/header-texture.png') repeat scroll 0 0 #0d3268; /* Older browsers */
+  background: url('images/header-texture.png') repeat scroll 0 0 #0d3268; /* Older browsers */
   background-image:
   -moz-linear-gradient(top, rgba(13, 50, 104, 0.1), rgba(13, 50, 104, 0.4)),
-  url('../img/header-texture.png');
+  url('images/header-texture.png');
   background-image: 
   -webkit-linear-gradient(top, rgba(13, 50, 104, 0.1), rgba(13, 50, 104, 0.4)),
-  url('../img/header-texture.png');
+  url('images/header-texture.png');
   background-image: 
   linear-gradient(top, rgba(13, 50, 104, 0.1), rgba(13, 50, 104, 0.4)),
-  url('../img/header-texture.png');
+  url('images/header-texture.png');
   border-bottom: 1px solid #0c1a32;
   border-top: 1px solid #5d769a;
   position: relative;
@@ -690,11 +690,11 @@ border-radius:         2px; }
 #main .home-content p { color: #555; font-family: "chaparral-pro", "PT Serif", "Georgia", "Times New Roman", serif; font-size: 17px; font-size: 1.7rem; line-height: 1.6em; }
 
 #find-materials { border-color: #ccc; border-style: dotted; border-width: 1px 0 1px 0; clear: both; margin: 36px 0 0 0; padding: 1.33em 0.5em; overflow: hidden; }
-#main #find-materials h2 { background: url('../img/search-icon-l.png') no-repeat scroll 0 7px transparent; color: #777; line-height: 38px; margin: 0 3.8% 0 0; padding-left: 40px; }
+#main #find-materials h2 { background: url('images/search-icon-l.png') no-repeat scroll 0 7px transparent; color: #777; line-height: 38px; margin: 0 3.8% 0 0; padding-left: 40px; }
 #main h3.finding-aids { clear: both; color: #444; font-family: "chaparral-pro", "PT Serif", "Georgia", "Times New Roman", serif; font-size: 17px; font-style: italic; font-weight: normal; margin: 0 0 36px 0; padding-top: 1em; text-align: center; text-transform: none; }
 
 .home-widget-container { 
-  background: url('../img/exhibit-texture.png') repeat scroll 0 0 #eaebec;
+  background: url('images/exhibit-texture.png') repeat scroll 0 0 #eaebec;
   margin-top: 2em;
   overflow: hidden;
   -webkit-box-shadow: 0px 2px 3px #ccc;
@@ -883,16 +883,16 @@ FOOTER
 --------------------------------------------------------- */
 
 .footer-container {
-  background: url('../img/header-texture.png') repeat scroll 0 0 #0d3268;
+  background: url('images/header-texture.png') repeat scroll 0 0 #0d3268;
   background-image:
   -moz-linear-gradient(top, rgba(13, 50, 104, 0.1), rgba(13, 50, 104, 0.4)),
-  url('../img/header-texture.png');
+  url('images/header-texture.png');
   background-image: 
   -webkit-linear-gradient(top, rgba(13, 50, 104, 0.1), rgba(13, 50, 104, 0.4)),
-  url('../img/header-texture.png');
+  url('images/header-texture.png');
   background-image: 
   linear-gradient(top, rgba(13, 50, 104, 0.1), rgba(13, 50, 104, 0.4)),
-  url('../img/header-texture.png');
+  url('images/header-texture.png');
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   color: #eef2f8;
   padding: 2em 0 3em;
