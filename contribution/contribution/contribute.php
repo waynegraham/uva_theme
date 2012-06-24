@@ -1,24 +1,15 @@
 <?php
-/**
- * @version $Id$
- * @license http://www.gnu.org/licenses/gpl-3.0.txt
- * @copyright Center for History and New Media, 2010
- * @package Contribution
- */
+// overrides to the Contribution contribute view
+
+queue_js('contribution-public-form');
 
 $head = array('title' => 'Contribute',
               'bodyclass' => 'contribution');
-head($head); ?>
-<?php echo js('contribution-public-form'); ?>
-<script type="text/javascript">
-// <![CDATA[
-enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); ?>);
-// ]]>
-</script>
+head($head);
+?>
 
 <div id="primary">
 <?php echo flash(); ?>
-    
     <h1><?php echo $head['title']; ?></h1>
     <form method="post" action="" enctype="multipart/form-data">
         <fieldset id="contribution-item-metadata">
@@ -70,5 +61,5 @@ enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); 
         </fieldset>
     </form>
 </div>
-<?php foot();
+<?php foot(); ?>
 
