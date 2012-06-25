@@ -8,6 +8,8 @@ if ($type->isFileRequired()):
 <div class="field">
         <?php echo $this->formLabel('contributed_file', 'Upload a file'); ?>
         <?php echo $this->formFile('contributed_file', array('class' => 'fileinput')); ?>
+        <p class="explanation">Max file size: <?php echo ini_get('upload_max_filesize'); ?>
+
 </div>
 <?php 
 endif;
@@ -19,7 +21,7 @@ if (!isset($required) && $type->isFileAllowed()):
 <div class="field">
         <?php echo $this->formLabel('contributed_file', 'Upload a file (Optional)'); ?>
         <?php echo $this->formFile('contributed_file', array('class' => 'fileinput')); ?>
-        <p class="explanation">Max file size: <?php echo ini_get('MAX_UPLOAD_LIMIT'); ?>
+        <p class="explanation">Max file size: <?php echo ini_get('upload_max_filesize'); ?>
 </div>
 <?php 
 endif;
