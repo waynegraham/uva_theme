@@ -1,5 +1,5 @@
 /* TEAM */
-Web Design: Starrie Williams
+Web Design: Starrie Williamson
 
 Omeka Theme: Wayne Graham 
 
