@@ -17,7 +17,7 @@ window.log = function(){
 {console.log();return window.console;}catch(err){return window.console={};}})());
 
 
-enableContributionAjaxForm("\/omeka\/contribution\/type-form");
+enableContributionAjaxForm("\/contribution\/type-form");
 
 jQuery(function($) {
     'use strict';
