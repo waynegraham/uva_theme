@@ -39,12 +39,13 @@
 
      <div class="container top-container">
       <div class="row top-row">
-        <nav class="sixcol" id="top-nav">
+        <nav class="eightcol" id="top-nav">
           <h3 class="visuallyhidden">U.Va. Links</h3>
           <ul>
-            <li><?php echo link_to_home_page(settings('site_title')); ?></li>
+            <li><?php echo link_to_home_page('Home'); ?></li>
             <li><a href="http://www.virginia.edu">U.Va. Home</a></li>
             <li><a href="http://lib.virginia.edu">U.Va. Library</a></li>
+            <li><a href="<?php echo uri('about'); ?>">About</a></li>
           </ul>
         </nav>
         <div class="sixcol last"></div>

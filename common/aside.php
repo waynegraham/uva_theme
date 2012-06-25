@@ -17,7 +17,7 @@
         <ul>
         <?php while(loop_items()): ?>
           <li class="item">
-            <h4><?php echo $item('title'); ?></h4>
+            <h4><?php echo item('Dublin Core', 'Title'); ?></h4>
             <?php if (item_has_thumbnail()): ?>
               <div class="item-img">
                 <?php echo link_to_item(item_square_thumbnail()); ?>
@@ -27,7 +27,7 @@
         <?php endwhile; ?>
         </ul>
         <?php else: ?>
-          <h4>There are no items</h4>
+          <h4>There are no public items</h4>
         <?php endif; ?>
         <p class="view-items-link"><?php echo link_to_browse_items(__('View All Items')); ?></p>
         </div>
