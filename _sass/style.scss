@@ -5,6 +5,14 @@
 
 @import url(http://fonts.googleapis.com/css?family=PT+Mono);
 
+body {
+  font-family: "ff-dagny-web-pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+#main h1 {
+  color:#51822f;
+}
+
 // contribution form additions
 legend {
   padding: 0.9em 0 1.0em;
