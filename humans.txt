@@ -9,7 +9,9 @@ Site: http://lib.virginia.edu & http://scholarslab.org
 
 Location: Charlottesville, Virginia, USA
 
-# THANKS
+/* Source */
+
+Github: https://github.com/waynegraham/uva_theme
 
 /* TECHNOLOGY */
 Last update: 2012/06/23
