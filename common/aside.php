@@ -13,9 +13,24 @@
           $homepageRecentItems = (int)get_theme_option('Homepage Recent Items') ? get_theme_option('Homepage Recent Items') : 5;
           set_items_for_loop(recent_items($homepageRecentItems));
          ?>
-               <p class="view-items-link"><?php echo link_to_browse_items(__('View All Items')); ?></p>
+        <?php if (has_items_for_loop()): ?>
+        <ul>
+        <?php while(loop_items()): ?>
+          <li class="item">
+            <h4><?php echo $item('title'); ?></h4>
+            <?php if (item_has_thumbnail()): ?>
+              <div class="item-img">
+                <?php echo link_to_item(item_square_thumbnail()); ?>
+              </div>
+            <?php endif; ?>
+          </li>
+        <?php endwhile; ?>
+        </ul>
+        <?php else: ?>
+          <h4>There are no items</h4>
+        <?php endif; ?>
+        <p class="view-items-link"><?php echo link_to_browse_items(__('View All Items')); ?></p>
         </div>
     </article>
   </div>
 </aside><!-- /#sidebar -->
-
