@@ -30,7 +30,7 @@
         <?php else: ?>
           <h4>There are no public items</h4>
         <?php endif; ?>
-        <p class="view-items-link"><?php echo link_to_browse_items(__('View All Items')); ?></p>
+        <p class="view-items-link"><?php echo link_to_browse_items(__('View All Contributions')); ?></p>
         </div>
     </article>
   </div>
