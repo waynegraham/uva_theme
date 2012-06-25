@@ -17,11 +17,12 @@
         <ul>
         <?php while(loop_items()): ?>
           <li class="item">
-            <h4><?php echo item('Dublin Core', 'Title'); ?></h4>
             <?php if (item_has_thumbnail()): ?>
               <div class="item-img">
                 <?php echo link_to_item(item_square_thumbnail()); ?>
               </div>
+            <?php else: ?>
+              <h4><?php echo item('Dublin Core', 'Title'); ?></h4>
             <?php endif; ?>
           </li>
         <?php endwhile; ?>
