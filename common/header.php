@@ -73,5 +73,5 @@
 <div class="container content-container">
   <div class="row content-row clearfix">
       <div id="content" class="row">
-          <div id="main" class="ninecol" role="main">
+          <div id="main" class="twelvecol" role="main">
             <div class="container">
