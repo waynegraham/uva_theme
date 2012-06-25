@@ -1,8 +1,7 @@
 </div>
 </div><!-- /#main -->
-</div>
 
-<?php //echo common('aside'); ?>
+<?php echo common('aside'); ?>
 
         </div><!-- /#content -->
     </div>
