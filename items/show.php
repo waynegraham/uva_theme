@@ -28,7 +28,7 @@ head(
 
     <!-- The following prints a citation for this item. -->
     <div id="item-citation" class="element">
-        <h3><?php echo __('Citation'); ?></h3>
+        <h2><?php echo __('Citation'); ?></h2>
         <div class="element-text"><?php echo item_citation(); ?></div>
     </div>
 
