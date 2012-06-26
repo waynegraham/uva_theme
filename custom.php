@@ -41,3 +41,13 @@ function Uva_Simple_Search()
   $html .= '</form>';
   return $html;
 }
+
+add_filter(array('Display', 'Item', 'Item Type Metadata', 'Local URL'), 'uva_link_to_url');
+
+function uva_link_to_url($url) {
+
+  $pattern = "((https?://)+[\w\d:#@%/;$()~_?\+-=\\\.&]*)";
+  $url = preg_replace($pattern, '<a href="\0">\0</a>', $url);
+
+  return $url;
+}
