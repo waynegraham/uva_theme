@@ -31,10 +31,12 @@ body {
 
 .results {
   .item {
-    &:not(:last-child):after {
-      content: '—·—';
+    &:not(:first-child):before {
+      width: 20%;
+      margin: 3em auto;
       display: block;
-      color: #ccc;
+      background-color: #ddd;
+      height:1px;
       text-align: center;
     }
 
