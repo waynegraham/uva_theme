@@ -14,6 +14,7 @@ function Uva_Simple_Search()
   $searchQuery = array_key_exists('search', $_GET) ? $_GET['search'] : '';
   $formProperties['action'] = $uri;
   $formProperties['method'] = 'get';
+  $formProperties['id'] = 'uva-simple-search';
   $html  = '<form ' . _tag_attributes($formProperties) . '>' . "\n";
   //$html .= '<fieldset>' . "\n\n";
   $html .= __v()->formText(

@@ -5,6 +5,7 @@
 @import 'bootstrap/variables';
 @import 'bootstrap/pagination';
 @import 'bootstrap/pager';
+@import 'compass';
 
 @import url(http://fonts.googleapis.com/css?family=PT+Mono);
 
@@ -22,46 +23,50 @@ body {
 }
 
 // search from neatline.org
-#search {
-  font-size: 70%;
+#uva-simple-search {
+  font-size: 80% !important;
   margin: 0 auto 1em;
   position: relative;
   width: 200px;
-  font-size: 1.866rem;
+  box-sizing:border-box;
 
-  &* {
-    margin: 0;
-  }
+  input {
+    display:inline;
+    @include background-clip(padding-box);
+    border-width: 1px;
 
-  input[type='search'] {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px 4px 4px 4px;
-    margin: 0;
-    padding: 5px 2em 5px 5px;
-    width: 150px;
-  }
+    &[type="text"] {
+      text-align:left;
+      background: #f5f5f5;
+      border-color: #999;
+      font-size: 12px;
+      height: 18px;
+      margin: 0;
+      padding: 4px 3%;
+      width: 60%;
+      @include border-radius(6px 0 0 6px);
+    }
 
-  input[type="submit"] {
-    background-color: rgba(120, 120, 120, 0.7);
-    background-image: url("images/magnifying-glass.png");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 70% 70%;
-    border: medium none !important;
-    border-radius: 0 4px 4px 0;
-    content: "";
-    height: 2em;
-    line-height: 0;
-    margin-top: -1em;
-    position: absolute;
-    right: 0;
-    text-indent: -9999px;
-    top: 50%;
-    width: 2em;
-  }
+    &[type="submit"] {
+      background: #aaa;
+      border-color: #777;
+      color: #333;
+      font-size: 12px;
+      font-weight: 700;
+      height: 28px;
+      line-height: 22px;
+      margin: 0 0 0 -1px;
+      vertical-align: middle;
+      min-width: 58px;
+      width: 14%;
+      @include background-image(linear-gradient(top, #eee, #bbb));
+      @include border-radius(0 6px 6px 0);
+      @include text-shadow(0 1px 0 #eee);
 
-  input[type="submit"]:hover, #search input[type="submit"]:active {
-    background-color: rgba(120, 120, 120, 0.9);
+      &:active {
+        top:0;
+      }
+    }
   }
 }
 
@@ -103,3 +108,12 @@ p {
   overflow: wrap;
 }
 
+.page a {
+  text-decoration: none;
+}
+
+.element-set {
+  h2 {
+    margin: 0 0 0.67em;
+  }
+}
