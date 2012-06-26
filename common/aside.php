@@ -3,7 +3,7 @@
     <div id="sidebar-area-top">
       <article id="search-2" class="widget-1 widget-first widget widget_search">
         <div class="widget-1 widget-first container">
-          <?php echo simple_search(); ?>
+          <?php echo Uva_Simple_Search(); ?>
         </div>
       </article>
       <article id="recent-posts-2" class="widget-2 widget widget_recent_entries">
@@ -22,7 +22,7 @@
                 <?php echo link_to_item(item_square_thumbnail()); ?>
               </div>
             <?php else: ?>
-              <h4><?php echo item('Dublin Core', 'Title'); ?></h4>
+              <h4><?php echo link_to_item(item('Dublin Core', 'Title')); ?></h4>
             <?php endif; ?>
           </li>
         <?php endwhile; ?>

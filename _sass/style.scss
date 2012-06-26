@@ -1,7 +1,10 @@
 /*@import 'base';*/
-/*@import 'bootstrap/mixins';*/
 @import '1140';
 @import 'uva';
+@import 'bootstrap/mixins';
+@import 'bootstrap/variables';
+@import 'bootstrap/pagination';
+@import 'bootstrap/pager';
 
 @import url(http://fonts.googleapis.com/css?family=PT+Mono);
 
@@ -16,6 +19,50 @@ body {
 
 .explanation {
   font-weight: normal;
+}
+
+// search from neatline.org
+#search {
+  font-size: 70%;
+  margin: 0 auto 1em;
+  position: relative;
+  width: 200px;
+  font-size: 1.866rem;
+
+  &* {
+    margin: 0;
+  }
+
+  input[type='search'] {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px 4px 4px 4px;
+    margin: 0;
+    padding: 5px 2em 5px 5px;
+    width: 150px;
+  }
+
+  input[type="submit"] {
+    background-color: rgba(120, 120, 120, 0.7);
+    background-image: url("images/magnifying-glass.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    border: medium none !important;
+    border-radius: 0 4px 4px 0;
+    content: "";
+    height: 2em;
+    line-height: 0;
+    margin-top: -1em;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    top: 50%;
+    width: 2em;
+  }
+
+  input[type="submit"]:hover, #search input[type="submit"]:active {
+    background-color: rgba(120, 120, 120, 0.9);
+  }
 }
 
 // contribution form additions
