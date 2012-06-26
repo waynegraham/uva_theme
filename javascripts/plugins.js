@@ -22,7 +22,7 @@ enableContributionAjaxForm("\/contribution\/type-form");
 jQuery(function($) {
     'use strict';
     // add any jQuery namespace functions here
-
+    $('.pagination').hide();
 });
 
 var uvatheme = (function() {

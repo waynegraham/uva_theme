@@ -17,7 +17,7 @@ head(
     <h1><?php echo item('Dublin Core', 'Title'); ?></h1>
     <div  class="row clearfix">
       <!-- The following returns all of the files associated with an item. -->
-      <div id="itemfiles" class="threecol">
+      <div id="itemfiles" class="sixcol">
         <?php echo display_files_for_item(); ?>
       </div>
 

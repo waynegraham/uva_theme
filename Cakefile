@@ -2,6 +2,7 @@ fs = require 'fs'
 util = require 'util'
 
 files = [
+  './javascripts/infinitescroll.js',
   './javascripts/plugins.js' # this needs to be last
 ]
 

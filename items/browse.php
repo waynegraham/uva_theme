@@ -9,7 +9,6 @@ head(
   )
 );
 ?>
-
 <div id="primary">
 
 <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', total_results()); ?></h1>
@@ -19,7 +18,7 @@ head(
 </div>
 
 <?php while (loop_items()): ?>
-    <div class="item hentry">
+    <div class="item hentry clearfix">
         <div class="item-meta">
 
         <h2><?php echo link_to_item(item('Dublin Core', 'Title'), array('class'=>'permalink')); ?></h2>
@@ -40,7 +39,6 @@ head(
         </div>
         <?php endif; ?>
 
-       
         <?php echo plugin_append_to_items_browse_each(); ?>
 
         </div><!-- end class="item-meta" -->
