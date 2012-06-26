@@ -31,6 +31,13 @@ body {
 
 .results {
   .item {
+    &:not(:last-child):after {
+      content: '—·—';
+      display: block;
+      color: #ccc;
+      text-align: center;
+    }
+
     .item-img {
       float: right;
       margin-left: 1.5em;
