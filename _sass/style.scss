@@ -28,6 +28,18 @@ body {
   font-weight: normal;
 }
 
+.item {
+
+
+  .item-img {
+    float: left;
+
+    img {
+      margin-right: 1em;
+    }
+  }
+}
+
 // search from neatline.org
 #uva-simple-search {
   font-size: 80% !important;

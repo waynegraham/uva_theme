@@ -21,13 +21,15 @@ head(
     <div class="item hentry clearfix">
         <div class="item-meta">
 
-        <h2><?php echo link_to_item(item('Dublin Core', 'Title'), array('class'=>'permalink')); ?></h2>
 
         <?php if (item_has_thumbnail()): ?>
         <div class="item-img">
             <?php echo link_to_item(item_square_thumbnail()); ?>
         </div>
         <?php endif; ?>
+
+        <h2><?php echo link_to_item(item('Dublin Core', 'Title'), array('class'=>'permalink')); ?></h2>
+
 
         <?php if ($text = item('Item Type Metadata', 'Text')): ?>
         <div class="item-description">
