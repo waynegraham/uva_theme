@@ -34,4 +34,5 @@
         </div>
     </article>
   </div>
+  </div>
 </aside><!-- /#sidebar -->
