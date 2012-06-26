@@ -43,6 +43,7 @@ function Uva_Simple_Search()
 }
 
 add_filter(array('Display', 'Item', 'Item Type Metadata', 'Local URL'), 'uva_link_to_url');
+add_filter(array('Display', 'Item', 'Dublin Core', 'Description'), 'uva_link_to_url');
 
 function uva_link_to_url($url) {
 
