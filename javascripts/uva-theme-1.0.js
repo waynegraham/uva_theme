@@ -779,6 +779,8 @@ jQuery(function($) {
       );
     }
 
+    $('#content.row').setAllToMaxHeight();
+
 });
 
 var uvatheme = (function() {
