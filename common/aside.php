@@ -14,7 +14,7 @@
           set_items_for_loop(recent_items($homepageRecentItems));
          ?>
         <?php if (has_items_for_loop()): ?>
-        <ul>
+        <ul class="recent-items">
         <?php while(loop_items()): ?>
           <li class="item">
             <?php if (item_has_thumbnail()): ?>
