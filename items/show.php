@@ -17,11 +17,11 @@ head(
     <h1><?php echo item('Dublin Core', 'Title'); ?></h1>
     <div  class="row clearfix">
       <!-- The following returns all of the files associated with an item. -->
-      <div id="itemfiles" class="sixcol">
-        <?php echo display_files_for_item(); ?>
+      <div id="itemfiles" class="ninecol">
+        <?php echo display_files_for_item(array('imageSize' => 'fullsize')); ?>
       </div>
 
-      <div class="element-set threecol">
+      <div class="element-set ninecol">
         <?php echo custom_show_item_metadata(); ?>
       </div>
     </div>
