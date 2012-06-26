@@ -147,3 +147,15 @@ p {
 #itemfiles {
   margin-bottom: 1.5em;
 }
+
+.kicker {
+  margin-bottom:0 !important;
+  font-style:italic;
+  color: #999;
+  font-family: Georgia, serif;
+  font-size:0.8em;
+
+  + * {
+    margin-top:0 !important;
+  }
+}

@@ -13,6 +13,7 @@ head(
 ?>
 
 <div id="primary">
+    <p class="kicker"><?php echo item('Item Type Name'); ?></p>
     <h1><?php echo item('Dublin Core', 'Title'); ?></h1>
     <div  class="row clearfix">
       <!-- The following returns all of the files associated with an item. -->
