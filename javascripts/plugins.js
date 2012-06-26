@@ -16,13 +16,33 @@ window.log = function(){
 (function(b){function c(){}for(var d="assert,clear,count,debug,dir,dirxml,error,exception,firebug,group,groupCollapsed,groupEnd,info,log,memoryProfile,memoryProfileEnd,profile,profileEnd,table,time,timeEnd,timeStamp,trace,warn".split(","),a;a=d.pop();){b[a]=b[a]||c}})((function(){try
 {console.log();return window.console;}catch(err){return window.console={};}})());
 
-
-enableContributionAjaxForm("\/contribution\/type-form");
+// TODO: Hack for conditionally setting this global
+if (typeof(enableContributionAjaxForm) != 'undefined') {
+  enableContributionAjaxForm('\/contribution\/type-form');
+}
 
 jQuery(function($) {
     'use strict';
     // add any jQuery namespace functions here
-    $('.pagination').hide();
+    //
+
+    // Infinite scroll for items/browse view
+    $('.pagination').hide(); // hide pagination for JS fallback
+
+    var $results = $('.results');
+
+    $results.infinitescroll({
+      //debug: true,
+      animate: true,
+      nextSelector: '.pagination_next a.next',
+      navSelector: '.pagination_next',
+      itemSelector: '.item',
+      loading: {
+        msgText: '<p><em>Loading next set of contributions...</em></p>',
+        finishedMsg: '<p><em>You have reached the end of the contributions.</em></p>'
+      }
+    });
+
 });
 
 var uvatheme = (function() {
@@ -30,3 +50,5 @@ var uvatheme = (function() {
   // UvaTheme module namespace using tight augmentation
 
 }(uvatheme));
+
+

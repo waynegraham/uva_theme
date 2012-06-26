@@ -22,7 +22,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
 <?php
-    queue_js('uva-theme-1.0-min', 'javascripts');
+    queue_js('uva-theme-1.0', 'javascripts');
     echo display_js(false);
 ?>
 <script>

@@ -20,7 +20,7 @@
     <?php if (isset($this->next)): ?> 
     <!-- Next page link -->
     <li class="pagination_next">
-    <a href="<?php echo html_escape($this->url(array('page' => $this->next), null, $_GET)); ?>"><?php echo __('Next'); ?></a>
+    <a class="next" href="<?php echo html_escape($this->url(array('page' => $this->next), null, $_GET)); ?>"><?php echo __('Next'); ?></a>
     </li>
     <?php endif; ?>
 </ul>

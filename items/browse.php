@@ -9,7 +9,7 @@ head(
   )
 );
 ?>
-<div id="primary">
+<div id="primary" class="results">
 
 <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', total_results()); ?></h1>
 
