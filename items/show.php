@@ -17,11 +17,11 @@ head(
     <h1><?php echo item('Dublin Core', 'Title'); ?></h1>
     <div  class="row clearfix">
       <!-- The following returns all of the files associated with an item. -->
-      <div id="itemfiles" class="twelvecol">
+      <div id="itemfiles">
         <?php echo display_files_for_item(array('imageSize' => 'fullsize')); ?>
       </div>
 
-      <div class="element-set twelvecol">
+      <div class="element-set">
         <?php if ($url = item('Item Type Metadata', 'Local URL')): ?>
           <p class="item-type-website"><strong>URL</strong>: <?php echo $url; ?></p>
         <?php endif; ?>
