@@ -47,7 +47,7 @@ add_filter(array('Display', 'Item', 'Dublin Core', 'Description'), 'uva_link_to_
 
 function uva_link_to_url($url) {
 
-  $pattern = "((https?://)+[\w\d:#@%/;$()~_?\+-=\\\.&]*)";
+  $pattern = "((https?://)+[\w\d:#@%!/;$()~_?\+-=\\\.&]*)";
   $url = preg_replace($pattern, '<a href="\0">\0</a>', $url);
 
   return $url;
