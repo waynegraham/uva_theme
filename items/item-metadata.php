@@ -1,2 +1,4 @@
+<?php if ($description = item('Dublin Core', 'Description')): ?>
 <h2>Description</h2>
-<p><?php echo html_escape(item('Dublin Core', 'Description')); ?></p>
+<?php echo nls2p($description); ?>
+<?php endif; ?>
