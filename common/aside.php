@@ -22,7 +22,7 @@
                 <?php echo link_to_item(item_square_thumbnail()); ?>
               </div>
             <?php else: ?>
-              <h4><?php echo link_to_item(item('Dublin Core', 'Title')); ?></h4>
+              <p class="recent-item-list"><?php echo link_to_item(item('Dublin Core', 'Title')); ?></p>
             <?php endif; ?>
           </li>
         <?php endwhile; ?>
