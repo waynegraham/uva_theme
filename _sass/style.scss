@@ -117,3 +117,14 @@ p {
     margin: 0 0 0.67em;
   }
 }
+
+.pager {
+  margin-left:0;
+  margin-right:0;
+  padding:0;
+  margin-top: 3em;
+  a {
+    text-decoration:none;
+    font-size: 80%;
+  }
+}
