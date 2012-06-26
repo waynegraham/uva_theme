@@ -59,7 +59,7 @@ jQuery(function($) {
       );
     }
 
-    $('#content.row').setAllToMaxHeight();
+    $('#content').setAllToMaxHeight();
 
 });
 
