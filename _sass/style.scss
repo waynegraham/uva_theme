@@ -128,3 +128,18 @@ p {
     font-size: 80%;
   }
 }
+
+.item-type-email {
+  border: 1px solid rgba(0,0,0,0.05);
+  background: rgba(255,255,255,0.5);
+  padding: 1.5em 5%;
+  font-size: 80%;
+  h2 {
+    font-size: 150% !important;
+    color: #555;
+  }
+
+  p {
+    margin-left: 2em;
+  }
+}

@@ -13,16 +13,38 @@ head(
 ?>
 
 <div id="primary">
-
     <h1><?php echo item('Dublin Core', 'Title'); ?></h1>
     <div  class="row clearfix">
       <!-- The following returns all of the files associated with an item. -->
-      <div id="itemfiles" class="ninecol">
+      <div id="itemfiles" class="twelvecol">
         <?php echo display_files_for_item(array('imageSize' => 'fullsize')); ?>
       </div>
 
-      <div class="element-set ninecol">
-        <?php echo custom_show_item_metadata(); ?>
+      <div class="element-set twelvecol">
+        <?php if ($url = item('Item Type Metadata', 'Local URL')): ?>
+          <p class="item-type-website"><strong>URL</strong>: <?php echo $url; ?></p>
+        <?php endif; ?>
+
+        <?php if ($description = item('Dublin Core', 'Description')): ?>
+        <?php echo nls2p($description); ?>
+        <?php endif; ?>
+        
+        <?php if (item_has_type('Email')): ?>
+        <div class="item-type-email">
+
+          <?php
+          $itemTypeFields = array('Text', 'From', 'To', 'CC', 'BCC', 'Subject Line', 'Email Body');
+          foreach ($itemTypeFields as $field):
+          ?>
+
+          <?php if ($value = item('Item Type Metadata', $field)): ?>
+
+          <h2><?php echo $field; ?></h2>
+          <?php echo nls2p($value); ?>
+
+          <?php endif; endforeach; ?>
+        </div>
+        <?php endif; ?>
       </div>
     </div>
 
