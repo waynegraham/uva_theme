@@ -47,6 +47,18 @@ body {
   }
 }
 
+
+
+ul.recent-items {
+  margin-bottom: 1.5em;
+
+  a {
+    display:block;
+    padding: 1.5em 0 !important;
+    border-bottom: 1px dotted #ccc;
+  }
+}
+
 // search from neatline.org
 #uva-simple-search {
   font-size: 80% !important;
