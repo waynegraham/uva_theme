@@ -45,7 +45,7 @@ head(
 
         <?php if (!is_null($contributor)): ?>
           <div class="contributor">
-          <p>Contributed by: <?php echo $contributor->name; ?></p>
+          <p>Contributed by <?php echo $contributor->name; ?></p>
         </div>
       <?php endif; ?>
 
