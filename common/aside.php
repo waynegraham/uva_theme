@@ -8,7 +8,7 @@
       </article>
       <article id="recent-posts-2" class="widget-2 widget widget_recent_entries">
         <div class="widget-2 container">
-          <h3><?php echo __('Recently Contributed'); ?></h3>
+          <h3><?php echo __('Contributed Items'); ?></h3>
         <?php
           $homepageRecentItems = (int)get_theme_option('Homepage Recent Items') ? get_theme_option('Homepage Recent Items') : 5;
 
