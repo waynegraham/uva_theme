@@ -10,6 +10,10 @@ head(
     'bodyclass' => 'show'
   )
 );
+
+$contributor = contribution_get_item_contributor(get_current_item()); 
+
+
 ?>
 
 <div id="primary">
@@ -29,7 +33,7 @@ head(
         <?php if ($description = item('Dublin Core', 'Description')): ?>
         <?php echo nls2p($description); ?>
         <?php endif; ?>
-        
+
         <?php if (item_has_type('Email')): ?>
         <div class="item-type-email">
 
@@ -42,11 +46,18 @@ head(
 
           <h2><?php echo $field; ?></h2>
           <?php echo nls2p($value); ?>
-
           <?php endif; endforeach; ?>
         </div>
         <?php endif; ?>
       </div>
+
+      <?php if (!is_null($contributor)): ?>
+      <div class="contributor">
+        <h2>Contributor</h2>
+        <?php echo $contributor->name; ?>
+      </div>
+      <?php endif; ?>
+
     </div>
 
     <!-- The following prints a citation for this item. -->
