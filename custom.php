@@ -1,5 +1,18 @@
 <?php
 
+/**
+ * gets random items to display
+ *
+ * @param int  $num      Number of items
+ * @param bool $hasImage Include only items with images?
+ *
+ * @return array Array of OmekaItems
+ */
+function random_public_items($num = 5, $hasImage = null)
+{
+    return get_items(array('random' => 1, 'hasImage' => $hasImage), $num);
+}
+
 function Uva_Simple_Search()
 {
   if (!$buttonText) {

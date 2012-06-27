@@ -11,7 +11,8 @@
           <h3><?php echo __('Recently Contributed'); ?></h3>
         <?php
           $homepageRecentItems = (int)get_theme_option('Homepage Recent Items') ? get_theme_option('Homepage Recent Items') : 5;
-          set_items_for_loop(recent_items($homepageRecentItems));
+
+          set_items_for_loop(random_public_items($homepageRecentItems));
          ?>
         <?php if (has_items_for_loop()): ?>
         <ul class="recent-items">
