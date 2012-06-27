@@ -41,6 +41,15 @@ head(
         </div>
         <?php endif; ?>
 
+        <?php $contributor = contribution_get_item_contributor(get_current_item()); ?>
+
+        <?php if (!is_null($contributor)): ?>
+          <div class="contributor">
+          <p>Contributed by: <?php echo $contributor->name; ?></p>
+        </div>
+      <?php endif; ?>
+
+
         <?php echo plugin_append_to_items_browse_each(); ?>
 
         </div><!-- end class="item-meta" -->

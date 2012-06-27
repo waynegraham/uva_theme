@@ -53,7 +53,7 @@ $contributor = contribution_get_item_contributor(get_current_item());
 
       <?php if (!is_null($contributor)): ?>
       <div class="contributor">
-        <h2>Contributor</h2>
+        <h2>Contributed by</h2>
         <?php echo $contributor->name; ?>
       </div>
       <?php endif; ?>
