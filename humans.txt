@@ -1,9 +1,9 @@
 /* TEAM */
-Web Design: Starrie Williamson
+Web Design: Starrie Williamson and Joe Gilbert
 
 Omeka Theme: Wayne Graham & Jeremy Boggs
 
-Twitter: @starriebird & @wayne_graham & @clioweb
+Twitter: @starriebird & @joegilbert & @wayne_graham & @clioweb
 
 Site: http://lib.virginia.edu & http://scholarslab.org
 
