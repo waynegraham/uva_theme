@@ -8,7 +8,7 @@ $head = array('title' => 'Contribute',
 head($head);
 ?>
 
-<div id="primary">
+<div id="primary" class="contribution">
 <?php echo flash(); ?>
     <h1><?php echo $head['title']; ?></h1>
     <form method="post" action="" enctype="multipart/form-data">
