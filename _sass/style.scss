@@ -166,6 +166,13 @@ p {
   }
 }
 
+.item-img {
+  img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .item-type-email {
   border: 1px solid rgba(0,0,0,0.05);
   background: rgba(255,255,255,0.5);
