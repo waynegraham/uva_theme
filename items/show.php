@@ -11,8 +11,8 @@ head(
   )
 );
 
-$contributor = contribution_get_item_contributor(get_current_item()); 
-
+$i = get_current_item();
+$contributor = contribution_get_item_contributor($i); 
 
 ?>
 
@@ -22,7 +22,19 @@ $contributor = contribution_get_item_contributor(get_current_item());
     <div  class="row clearfix">
       <!-- The following returns all of the files associated with an item. -->
       <div id="itemfiles">
-        <?php echo display_files_for_item(array('imageSize' => 'fullsize')); ?>
+        <?php if (item_has_type('Moving Image')): ?>
+        <?php $files = $i->getFiles();?>
+        <?php set_current_file($files[0]); ?>
+           <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+            <script src="http://vjs.zencdn.net/c/video.js"></script>
+            <video id="" class="vidoe-js vjs-default-skin" controls 
+preload="auto" width="650" height="530">
+
+<source src="<?php echo uri('archive/files/' . item_file('archive filename')); ?>" type="<?php echo item_file('MIME Type'); ?>" />
+            </video>
+        <?php else: ?>
+          <?php echo display_files_for_item(array('imageSize' => 'fullsize')); ?>
+        <?php endif; ?>
       </div>
 
       <div class="element-set">
@@ -36,7 +48,6 @@ $contributor = contribution_get_item_contributor(get_current_item());
 
         <?php if (item_has_type('Email')): ?>
         <div class="item-type-email">
-
           <?php
           $itemTypeFields = array('Text', 'From', 'To', 'CC', 'BCC', 'Subject Line', 'Email Body');
           foreach ($itemTypeFields as $field):
