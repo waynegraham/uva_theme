@@ -1,11 +1,9 @@
 <?php
+$title = item('Dublin Core', 'Title');
 
 head(
   array(
-    'title' => item(
-      'Dublin Core',
-      'Title'
-    ),
+    'title' => $title,
     'bodyid'=>'items',
     'bodyclass' => 'show'
   )
@@ -20,19 +18,18 @@ $contributor = contribution_get_item_contributor($i);
     <p class="kicker"><?php echo item('Item Type Name'); ?></p>
     <h1><?php echo item('Dublin Core', 'Title'); ?></h1>
     <div  class="row clearfix">
-      <!-- The following returns all of the files associated with an item. -->
-      <div id="itemfiles">
+           <div id="itemfiles">
         <?php if (item_has_type('Moving Image')): ?>
         <?php $files = $i->getFiles();?>
         <?php set_current_file($files[0]); ?>
            <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
             <script src="http://vjs.zencdn.net/c/video.js"></script>
-            <video id="" class="vidoe-js vjs-default-skin" controls 
-preload="auto" width="650" height="530">
+            <video id="video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="530" data-setup="{}">
 
-<source src="<?php echo uri('archive/files/' . item_file('archive filename')); ?>" type="<?php echo item_file('MIME Type'); ?>" />
+<source src="<?php echo 'http://localhost:8888' . uri('archive/files/' . item_file('archive filename')); ?>" type="<?php echo item_file('MIME Type'); ?>" />
             </video>
         <?php else: ?>
+           <!-- The following returns all of the files associated with an item. -->
           <?php echo display_files_for_item(array('imageSize' => 'fullsize')); ?>
         <?php endif; ?>
       </div>
