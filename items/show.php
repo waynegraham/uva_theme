@@ -26,7 +26,7 @@ $contributor = contribution_get_item_contributor($i);
             <script src="http://vjs.zencdn.net/c/video.js"></script>
             <video id="video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="530" data-setup="{}">
 
-<source src="<?php echo 'http://localhost:8888' . uri('archive/files/' . item_file('archive filename')); ?>" type="<?php echo item_file('MIME Type'); ?>" />
+<source src="<?php echo uri('archive/files/' . item_file('archive filename')); ?>" type="<?php echo item_file('MIME Type'); ?>" />
             </video>
         <?php else: ?>
            <!-- The following returns all of the files associated with an item. -->
